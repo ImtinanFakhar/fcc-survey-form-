@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="styles.css">
+     <title>survey-form</title>
+   
+</head>
+<body>
+    <h1 id="title">Survey-Form</h1>
+<p id="description">Thank you for taking the time to help us improve the platform</p>
+<form id="survey-form">
+    <label for="name" id="name-label">Name</label><br>
+    <input type="text" id="name" placeholder="Enter your name" required><br>
+    <label for="email" id="email-label">Email</label><br>
+    <input type="email" id="email" placeholder="Enter your Email" required><br>
+    <label for="number" id="number-label">Age (optional)</label><br>
+    <input type="number" id="number" min="1" max="120" placeholder="Age"><br>
+   <p>Which option best describes your current role?</p><br>
+    <select id="dropdown">
+        <option disabled selected value>Choose your current status</option>
+        <option value="student">Student</option>
+        <option value="employee">Employee</option>
+    </select>
+    <p>Would you recommend FreeCodeCamp to your friends?</p>
+    <label>
+        <input type="radio" name="user-recommendation" value="definitely">Definitely
+    </label><br>
+    <label>
+        <input type="radio" name="user-recommendation" value="not-sure">Not sure
+    </label><br>
+    <label>
+        <input type="radio" name="user-recommendation" value="maybe">Maybe
+    </label><br>
+    <label>
+        <p>What is your favorite feature?</p>
+        <select id="most-liked">
+            <option disabled selected value>Select an option</option>
+            <option value="front-end">Front-end</option>
+            <option value="back-end">Back-end</option>
+        </select>
+    </label><br>
+    <p>What are your suggestions?</p>
+    <label for="suggestion">
+        <textarea id="suggestion" rows="5" cols="50" placeholder="Enter your comment here"></textarea><br>
+        <button type="submit" id="submit">Submit</button>
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" name="likes" value="responsive">Responsive Design
+    </label><br>
+    <label>
+        <input type="checkbox" name="likes" value="user-friendly">User-friendly Interface
+    </label><br>
+</form>
+
+      
+</body>
+</html>
